@@ -29,8 +29,7 @@ p {
 .display-flex {
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 400px;
-	gap: 100px;
+	margin-bottom: 600px;
 }
 
 .display-flex-row-reverse {
@@ -142,16 +141,29 @@ button svg {
 	margin-top: 20px;
 }
 
+#body .display-flex {
+	gap: 150px;
+}
+
+#body .display-flex-row-reverse {
+	gap: 150px;
+}
+
 #squiggle_one {
 	z-index: 0;
 	width: 1500px;
 	margin-top: -100px;
 	margin-right: -100px;
-	margin-left: -300px;
+	margin-left: -500px;
 }
 
 #pushDown {
-	margin-top: 400px;
+	margin-top: 350px;
+	margin-left: 100px;
+}
+
+#people {
+	margin-top: -300px;
 }
 
 .row {
@@ -161,22 +173,33 @@ button svg {
 	flex-direction: row;
 }
 
+#kahui {
+	margin-top: 600px;
+}
+
 #kahuiImg {
 	position: relative;
 }
 
-#squiggleLeft {
-	margin-top: -100px;
+#squiggle-two {
+	margin-top: -400px;
 	margin-left: -200px;
-	width: 100vw;
 	position: absolute;
 	z-index: 0;
 }
 
 #kahui-img {
 	width: 50vw;
+	position: relative;
+	z-index: 1;
 	border-radius: 20px;
 	margin-bottom: 50px;
+}
+
+#kahuiP {
+	margin-top: 650px;
+	margin-left: 130px;
+	width: 28vw;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -249,6 +272,14 @@ button svg {
 		margin: 35px;
 	}
 
+	#body .display-flex {
+		gap: 0px;
+	}
+
+	#body .display-flex-row-reverse {
+		gap: 0px;
+	}
+
 	.display-flex {
 		display: flex;
 		flex-direction: column;
@@ -269,6 +300,11 @@ button svg {
 	}
 
 	#pushDown {
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	#people {
 		margin-top: 0px;
 	}
 
@@ -291,17 +327,20 @@ button svg {
 		width: 80vw;
 	}
 
+	#kahui {
+		margin-top: 500px;
+	}
+
 	#squiggle-two {
 		z-index: 0;
 		width: 110vw;
 		margin-left: -35px;
-		margin-top: -50px;
 	}
 
 	#kahui-img {
-		margin-top: -200px;
 		width: 85vw;
 		z-index: 1;
+		margin-top: -500px;
 	}
 
 	footer .display-flex-jcsb {
